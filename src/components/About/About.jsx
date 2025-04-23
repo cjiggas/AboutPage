@@ -8,7 +8,6 @@ import lei from '../../assets/lei.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCamera, faUsers, faAward, faVideo } from '@fortawesome/free-solid-svg-icons';
 
-
 const AboutPage = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-400 pt-16 pb-20 flex justify-center items-center">
@@ -26,11 +25,8 @@ const AboutPage = () => {
         {/* Team Story Section */}
         <section className="relative mb-40 flex justify-center items-center">
           <div className="flex flex-col md:flex-row items-center gap-8">
-            {/* Left Side: Text */}
             <div className="flex-1 text-gray-400">
-              <h2 className="text-2xl font-bold text-white text-left mb-6">
-                Our Story
-              </h2>
+              <h2 className="text-2xl font-bold text-white text-left mb-6">Our Story</h2>
               <p className="mb-4">
                 Founded in 2023, LaVisual began as a freelance creatives with a big vision.
                 To create stunning visual content that tells powerful stories and preserves precious memories.
@@ -46,16 +42,11 @@ const AboutPage = () => {
                 We believe that every client deserves a unique approach tailored to their specific vision and needs.
               </p>
             </div>
-
-            {/* Right Side: Image Placeholder */}
             <div className="flex-shrink-0 w-[600px] h-[450px] bg-gray-700 rounded-lg">
-              <img
-                src={lei}
-                alt="Lei"
-                className="w-full h-full object-cover rounded-lg"/>
-              </div>
-              </div>
-            </section>
+              <img src={lei} alt="Lei" className="w-full h-full object-cover rounded-lg" />
+            </div>
+          </div>
+        </section>
 
         {/* Values Section */}
         <section className="text-center mb-40 flex justify-center items-center">
@@ -96,90 +87,66 @@ const AboutPage = () => {
 
         {/* Team Members Section */}
         <section className="text-center mb-10 flex justify-center items-center">
-        <div>
+          <div>
             <h2 className="text-2xl font-bold text-white mb-6">Meet our Team</h2>
-
-            {/* Row 1: 3 Cards */}
             <div className="flex justify-center gap-10 mb-10">
-            <div className="bg-gray-800 rounded-lg shadow-md w-[295px] h-[475px] transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
-                <img
-                src={tine}
-                alt="Lead Photographer"
-                className="w-[295px] h-[255px] object-cover rounded-t-lg"
-                />
+              <div className="bg-gray-800 rounded-lg shadow-md w-[295px] h-[475px] transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
+                <img src={tine} alt="Lead Photographer" className="w-[295px] h-[255px] object-cover rounded-t-lg" />
                 <div className="p-4 text-left">
-                <h3 className="text-xl font-bold text-white">Tine De Leon</h3>
-                <p className="text-sm" style={{ color: '#C084FC' }}>Lead Photographer</p>
-                <p className="text-gray-400 mt-2">
-                    Tine has over 10 years of experience capturing weddings, events, and portraits. His unique style combines 
+                  <h3 className="text-xl font-bold text-white">Tine De Leon</h3>
+                  <p className="text-sm" style={{ color: '#C084FC' }}>Lead Photographer</p>
+                  <p className="text-gray-400 mt-2">
+                    Tine has over 10 years of experience capturing weddings, events, and portraits. His unique style combines
                     photojournalism with artistic composition.
-                </p>
+                  </p>
                 </div>
-            </div>
-            <div className="bg-gray-800 rounded-lg shadow-md w-[295px] h-[475px] transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
-                <img
-                src={nick}
-                alt="Senior Videographer"
-                className="w-[295px] h-[255px] object-cover rounded-t-lg"
-                />
+              </div>
+              <div className="bg-gray-800 rounded-lg shadow-md w-[295px] h-[475px] transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
+                <img src={nick} alt="Senior Videographer" className="w-[295px] h-[255px] object-cover rounded-t-lg" />
                 <div className="p-4 text-left">
-                <h3 className="text-xl font-bold text-white">Nic Ople</h3>
-                <p className="text-sm" style={{ color: '#C084FC' }}>Senior Videographer</p>
-                <p className="text-gray-400 mt-2">
+                  <h3 className="text-xl font-bold text-white">Nic Ople</h3>
+                  <p className="text-sm" style={{ color: '#C084FC' }}>Senior Videographer</p>
+                  <p className="text-gray-400 mt-2">
                     With a background in film production, Nic creates cinematic videos that tell compelling stories.
                     He specializes in wedding films and commercial projects.
-                </p>
+                  </p>
                 </div>
-            </div>
-            <div className="bg-gray-800 rounded-lg shadow-md w-[295px] h-[475px] transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
-                <img
-                src={teo}
-                alt="Portrait Specialist"
-                className="w-[295px] h-[255px] object-cover rounded-t-lg"
-                />
+              </div>
+              <div className="bg-gray-800 rounded-lg shadow-md w-[295px] h-[475px] transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
+                <img src={teo} alt="Portrait Specialist" className="w-[295px] h-[255px] object-cover rounded-t-lg" />
                 <div className="p-4 text-left">
-                <h3 className="text-xl font-bold text-white">Teo Espique</h3>
-                <p className="text-sm" style={{ color: '#C084FC' }}>Portrait Specialist</p>
-                <p className="text-gray-400 mt-2">
-                    Teo has a gift for capturing personalities in his portrait work. 
+                  <h3 className="text-xl font-bold text-white">Teo Espique</h3>
+                  <p className="text-sm" style={{ color: '#C084FC' }}>Portrait Specialist</p>
+                  <p className="text-gray-400 mt-2">
+                    Teo has a gift for capturing personalities in his portrait work.
                     His relaxed approach puts subjects at ease, resulting in natural and authentic images.
-                </p>
+                  </p>
                 </div>
+              </div>
             </div>
-            </div>
-
-            {/* Row 2: 2 Cards */}
             <div className="flex justify-center gap-10">
-            <div className="bg-gray-800 rounded-lg shadow-md w-[295px] h-[475px] transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
-                <img
-                src={nald}
-                alt="Event Photographer"
-                className="w-[295px] h-[255px] object-cover rounded-t-lg"
-                />
+              <div className="bg-gray-800 rounded-lg shadow-md w-[295px] h-[475px] transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
+                <img src={nald} alt="Event Photographer" className="w-[295px] h-[255px] object-cover rounded-t-lg" />
                 <div className="p-4 text-left">
-                <h3 className="text-xl font-bold text-white">Nald Magana</h3>
-                <p className="text-sm" style={{ color: '#C084FC' }}>Event Photographer</p>
-                <p className="text-gray-400 mt-2">
-                    Nald excels at capturing the energy and emotion of events. From corporate gatherings to music festivals, he 
+                  <h3 className="text-xl font-bold text-white">Nald Magana</h3>
+                  <p className="text-sm" style={{ color: '#C084FC' }}>Event Photographer</p>
+                  <p className="text-gray-400 mt-2">
+                    Nald excels at capturing the energy and emotion of events. From corporate gatherings to music festivals, he
                     documents all the key moments.
-                </p>
+                  </p>
                 </div>
-            </div>
-            <div className="bg-gray-800 rounded-lg shadow-md w-[295px] h-[475px] transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
-                <img
-                src={clint}
-                alt="Event Photographer"
-                className="w-[295px] h-[255px] object-cover rounded-t-lg"
-                />
+              </div>
+              <div className="bg-gray-800 rounded-lg shadow-md w-[295px] h-[475px] transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
+                <img src={clint} alt="Event Photographer" className="w-[295px] h-[255px] object-cover rounded-t-lg" />
                 <div className="p-4 text-left">
-                <h3 className="text-xl font-bold text-white">Clint Salvador</h3>
-                <p className="text-sm" style={{ color: '#C084FC' }}>Event Photographer</p>
-                <p className="text-gray-400 mt-2">
-                    Clint thrives on capturing the atmosphere and emotions on live events, ensuring no memory 
+                  <h3 className="text-xl font-bold text-white">Clint Salvador</h3>
+                  <p className="text-sm" style={{ color: '#C084FC' }}>Event Photographer</p>
+                  <p className="text-gray-400 mt-2">
+                    Clint thrives on capturing the atmosphere and emotions on live events, ensuring no memory
                     goes unnoticed.
-                </p>
+                  </p>
                 </div>
-            </div>
+              </div>
             </div>
           </div>
         </section>
@@ -192,17 +159,11 @@ const AboutPage = () => {
               Let's create something beautiful together. Contact us to discuss your project or book a session.
             </p>
           </div>
-
-          {/* Buttons Container */}
           <div className="flex justify-center gap-4">
-            <button
-              className="bg-[#9333EA] text-white w-[125px] h-[50px] rounded-[6px] hover:scale-105 border border-white hover:bg-purple-700 transition text-x1"
-            >
+            <button className="bg-[#9333EA] text-white w-[125px] h-[50px] rounded-[6px] hover:scale-105 border border-white hover:bg-purple-700 transition text-x1">
               Contact Us
             </button>
-            <button
-              className="bg-transparent text-white w-[155px] h-[50px] rounded-[6px] hover:scale-105 border border-white hover:bg-gray-700 transition text-x1"
-            >
+            <button className="bg-transparent text-white w-[155px] h-[50px] rounded-[6px] hover:scale-105 border border-white hover:bg-gray-700 transition text-x1">
               View Our Work
             </button>
           </div>
