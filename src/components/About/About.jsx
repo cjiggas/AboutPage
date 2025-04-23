@@ -160,10 +160,10 @@ const AboutPage = () => {
             </p>
           </div>
           <div className="flex justify-center gap-4">
-            <button className="bg-[#9333EA] text-white w-[125px] h-[50px] rounded-[6px] hover:scale-105 border border-white hover:bg-purple-700 transition text-x1 flex items-center justify-center gap-2">
+            <button className="bg-[#9333EA] text-white w-[125px] h-[50px] rounded-[6px] hover:scale-105 border border-white hover:bg-purple-700 transition text-x1">
               Contact Us
             </button>
-            <button className="bg-transparent text-white w-[155px] h-[50px] rounded-[6px] hover:scale-105 border border-white hover:bg-gray-700 transition text-x1 flex items-center justify-center gap-2">
+            <button className="bg-transparent text-white w-[155px] h-[50px] rounded-[6px] hover:scale-105 border border-white hover:bg-gray-700 transition text-x1">
               View Our Work
             </button>
           </div>
